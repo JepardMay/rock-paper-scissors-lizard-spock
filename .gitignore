@@ -1,6 +1,5 @@
 package-lock.json
 node_modules/
-build/
 source/css/*.css
 source/css/*.map
 *.sketch
