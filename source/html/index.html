@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock Paper Scissors Game" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors, Lizard, Spock</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="title title--bonus">Rock Paper Scissors Lizard Spock</h1>
+        <div class="score"><small class="score__text">Score</small><b class="score__num">12</b></div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="gameboard gameboard--extended">
+            <div class="gameboard__stage-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="329" height="313" viewbox="0 0 329 313">
+                <use xlink:href="img/sprite_auto.svg#bg-pentagon"></use>
+              </svg>
+              <button data-type="scissors" class="gameboard__element gameboard__element--scissors" type="button" aria-label="Choose scissors">
+                <svg width="51" height="58" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-scissors"></use>
+                </svg>
+              </button>
+              <button data-type="spock" class="gameboard__element gameboard__element--spock" type="button" aria-label="Choose spock">
+                <svg width="45" height="59" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-spock"></use>
+                </svg>
+              </button>
+              <button data-type="paper" class="gameboard__element gameboard__element--paper" type="button" aria-label="Choose paper">
+                <svg width="49" height="59" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-paper"></use>
+                </svg>
+              </button>
+              <button data-type="lizard" class="gameboard__element gameboard__element--lizard" type="button" aria-label="Choose lizard">
+                <svg width="63" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-lizard"></use>
+                </svg>
+              </button>
+              <button data-type="rock" class="gameboard__element gameboard__element--rock" type="button" aria-label="Choose rock">
+                <svg width="48" height="48" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-rock"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="gameboard__stage-2 display-none">
+              <div class="gameboard__block gameboard__block--player">
+                <div class="gameboard__element"></div>
+                <h2 class="gameboard__text">You Picked</h2>
+              </div>
+              <div class="gameboard__block gameboard__block--house">
+                <div class="gameboard__element"></div>
+                <h2 class="gameboard__text">The House Picked</h2>
+              </div>
+              <div class="gameboard__result gameboard__result--hidden">
+                <p class="gameboard__text gameboard__text--lg">You Win</p>
+                <button class="btn btn--white btn--lg" id="restart-btn" type="button">Play Again</button>
+              </div>
+            </div>
+          </div>
+          <button class="btn" id="rules-btn" type="button">Rules</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <a class="footer__link link" href="original.html">Play original game</a>
+        <div class="footer__attributes">
+          Challenge by
+          <a class="link" href="https://www.frontendmentor.io?ref=challenge" rel="”noreferrer”" target="_blank">Frontend Mentor</a>. Coded by <a class="link" href="https://github.com/JepardMay">Veronika Palto</a>.
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" id="rules-modal">
+      <h2 class="modal__title">Rules</h2>
+      <div class="modal__content">
+        <svg width="304" height="270" aria-hidden="true">
+          <use xlink:href="img/sprite_auto.svg#image-rules-bonus"></use>
+        </svg>
+      </div>
+      <button class="modal__btn btn-close" aria-label="Close">
+        <svg width="20" height="20" aria-hidden="true">
+          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="overlay"></div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

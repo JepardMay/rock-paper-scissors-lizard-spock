@@ -1,0 +1,144 @@
+@keyframes colorChange {
+  0% {
+    color: $color-red;
+  }
+  50% {
+    color: $color-blue;
+  }
+  100% {
+    color: $color-orange;
+  }
+}
+
+@keyframes colorChangeExtended {
+  0% {
+    color: $color-red;
+  }
+  25% {
+    color: $color-blue;
+  }
+  50% {
+    color: $color-orange;
+  }
+  75% {
+    color: $color-purple;
+  }
+  100% {
+    color: $color-cyan;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $laptop-width;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @include tablet {
+    padding: 0 32px;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding: 10px 12px;
+  border: 2px solid $color-outline;
+  border-radius: 5px;
+
+  @include tablet {
+    width: 704px;
+    margin: 0 auto;
+    margin-top: 46px;
+    padding: 15px 21px;
+    border: 4px solid $color-outline;
+    border-radius: 14px;
+  }
+}
+
+.title {
+  max-width: 100px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 21px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--bonus {
+    max-width: 64px;
+    font-size: 13px;
+    line-height: 11px;
+  }
+
+  @include tablet {
+    align-self: flex-start;
+    max-width: 180px;
+    margin: 10px;
+    font-size: 38px;
+    line-height: 31px;
+    letter-spacing: 1px;
+
+    &--bonus {
+      max-width: 122px;
+      margin: 0 10px;
+      font-size: 28px;
+      line-height: 23px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > .btn {
+    margin-top: 35px;
+  }
+
+  @include tablet {
+    position: relative;
+
+    & > .btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 6px 0;
+  opacity: 0.8;
+
+  &__link {
+    margin-right: auto;
+    text-transform: uppercase;
+    animation: colorChange 3s infinite
+      ease-out;
+  }
+
+  &__link--extended {
+    animation: colorChangeExtended 5s
+      infinite ease-out;
+  }
+
+  &__attribute {
+    margin-left: 20px;
+  }
+}

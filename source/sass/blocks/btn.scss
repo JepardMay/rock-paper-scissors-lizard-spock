@@ -1,0 +1,42 @@
+.btn {
+  padding: 10px 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-white;
+  background-color: transparent;
+  border: 2px solid $color-outline;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: color $default-transition,
+    background-color $default-transition,
+    border-color $default-transition;
+  cursor: pointer;
+
+  @media (hover: hover),
+    screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: $color-dark;
+      background-color: $color-white;
+      border-color: $color-white;
+    }
+  }
+
+  &--white {
+    color: $color-dark;
+    background-color: $color-white;
+    border-color: $color-white;
+
+    @media (hover: hover),
+      screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-red;
+      }
+    }
+  }
+
+  &--lg {
+    padding: 12px 60px;
+  }
+}

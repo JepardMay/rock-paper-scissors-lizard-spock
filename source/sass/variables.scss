@@ -1,0 +1,108 @@
+// Colors
+
+// Basic colors
+$color-orange: #eca922;
+$color-orange-dark: #ec9e0e;
+$color-orange-shadow: #c76b18;
+
+$color-blue: #4865f4;
+$color-blue-dark: #5671f5;
+$color-blue-shadow: #2a46c0;
+
+$color-red: #dc2e4e;
+$color-red-dark: #dd405d;
+$color-red-shadow: #9e1737;
+
+$color-purple: #834fe3;
+$color-purple-dark: #8c5de5;
+$color-purple-shadow: #5c36a7;
+
+$color-cyan: #40b9ce;
+$color-cyan-dark: #52bed1;
+$color-cyan-shadow: #2b8ead;
+
+$color-inner-shadow: #b9bdd6;
+
+// Basic gradients
+$gradient-color-scissors: linear-gradient(
+  $color-orange,
+  $color-orange-dark
+);
+$gradient-color-paper: linear-gradient(
+  $color-blue,
+  $color-blue-dark
+);
+$gradient-color-rock: linear-gradient(
+  $color-red,
+  $color-red-dark
+);
+$gradient-color-lizard: linear-gradient(
+  $color-purple,
+  $color-purple-dark
+);
+$gradient-color-spock: linear-gradient(
+  $color-cyan,
+  $color-cyan-dark
+);
+
+// Reverse gradients
+$gradient-color-scissors-reverse: linear-gradient(
+  $color-orange-dark,
+  $color-orange
+);
+$gradient-color-paper-reverse: linear-gradient(
+  $color-blue-dark,
+  $color-blue
+);
+$gradient-color-rock-reverse: linear-gradient(
+  $color-red-dark,
+  $color-red
+);
+$gradient-color-lizard-reverse: linear-gradient(
+  $color-purple-dark,
+  $color-purple
+);
+$gradient-color-spock-reverse: linear-gradient(
+  $color-cyan-dark,
+  $color-cyan
+);
+
+$color-dark: #3b4363;
+$color-blue: #2a46c0;
+$color-light: #56526b;
+$color-white: #f6f6f6;
+$color-outline: #606e85;
+$color-icon: #3b4262;
+$color-shadow: rgba(0, 0, 0, 0.2);
+$color-shadow-white: rgba(
+  255,
+  255,
+  255,
+  0.1
+);
+
+$color-background: #1f3756;
+$color-dark-background: #141539;
+
+$gradient-background: linear-gradient(
+  $color-background,
+  $color-dark-background
+);
+
+// Typography
+
+$font-family: "Barlow Semi Condensed", Arial,
+  sans-serif;
+
+// animation
+
+$default-transition: 0.2s ease-in-out;
+$long-transition: 0.5s ease-in;
+
+$modal-transition: 0.7s ease-in-out;
+
+// Viewports
+
+$mobile-width: 375px;
+$tablet-width: 1024px;
+$laptop-width: 1366px;

@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: $color-light;
+  background-color: $color-white;
+  transform: translateX(-500%);
+  transition: transform $modal-transition;
+  overflow-y: auto;
+  pointer-events: none;
+
+  @include tablet {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 416px;
+    margin-top: -208px;
+    margin-left: -200px;
+    padding: 28px 32px;
+
+    border-radius: 8px;
+  }
+}
+
+.modal--open {
+  transform: translateX(0);
+  pointer-events: initial;
+}
+
+.modal__title {
+  width: 100%;
+  margin: 78px 0 42px;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+.modal__content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.modal__btn {
+  width: 100%;
+  margin: 75px 0 42px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  svg {
+    fill: $color-icon;
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    text-align: right;
+  }
+}
