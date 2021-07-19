@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/sass-css-animations-js-mobilefirst-i3-sfffmx)
+- Live Site URL: [Netlify](https://festive-ritchie-ff3d6c.netlify.app/)
 
 ## Built with
 
